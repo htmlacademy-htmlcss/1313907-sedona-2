@@ -2,7 +2,7 @@
 
 * Студент: [Aleksandr Kovalev](https://up.htmlacademy.ru/htmlcss-individual/2/user/1313907).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт: [Седона](https://github.com/alexanderVLG/1313907-sedona-2)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
