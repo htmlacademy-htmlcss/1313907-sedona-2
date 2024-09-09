@@ -1,4 +1,16 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+}
 
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+}
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
 /* .visually-hidden {
     position: absolute;
@@ -12,3 +24,8 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   } */
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
