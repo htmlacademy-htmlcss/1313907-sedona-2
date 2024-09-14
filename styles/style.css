@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -24,6 +24,9 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
@@ -58,6 +61,10 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 .hero {
