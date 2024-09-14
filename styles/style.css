@@ -23,7 +23,7 @@ body {
   background-color: #f2f2f2;
 }
 
-.container {
+.page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -35,12 +35,31 @@ body {
 
 .page-header,
 .catalog-header {
+  /* padding-left: 70px;
+  padding-right: 70px; */  /* Какой способ лучше использовать для центровки блока навигации? */
   color: #000000;
-  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.navigation-logo {
+  margin-right: 28px;
 }
 
 .navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
   list-style: none;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
 }
 
 .navigation-link {
