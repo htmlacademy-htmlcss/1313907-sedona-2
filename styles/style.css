@@ -104,6 +104,7 @@ body {
 .hero-image {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
   padding-bottom: 82px;
 }
 
@@ -270,7 +271,7 @@ body {
 }
 
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -281,7 +282,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 /* Страница каталога */
 .inner-header {
