@@ -433,8 +433,6 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   width: 1060px;
   list-style: none;
@@ -488,7 +486,9 @@ body {
 }
 
 /* Пагинация */
-
+.pagination {
+  padding-left: 0;
+}
 
 
 /* Секция подписки на странице каталога */
