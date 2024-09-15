@@ -35,15 +35,14 @@ body {
 
 .page-header,
 .catalog-header {
-  /* padding-left: 70px;
-  padding-right: 70px; */  /* Какой способ лучше использовать для центровки блока навигации? */
+  padding-left: 70px;
+  padding-right: 70px;
   color: #000000;
 }
 
 .navigation {
   display: flex;
   margin: 0 auto;
-  width: 1060px;
 }
 
 .navigation-logo {
@@ -96,7 +95,7 @@ body {
   background-color: #333333;
   background-image: url("../images/index-background-bottom.svg"),
     url("../images/index-background.jpg");
-  background-size: cover;
+  /* background-size: cover; */ /* при кавер картинка index-background-bottom отображается по другому, отличается от макета */
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -104,13 +103,9 @@ body {
 .hero-image {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
-  padding-bottom: 82px;
 }
 
 .introduce {
-  padding-top: 69px;
-  padding-bottom: 90px;
   text-align: center;
 }
 
@@ -200,7 +195,14 @@ body {
 }
 
 .services-list {
+  display: flex;
+  padding-left: 0;
   list-style: none;
+}
+
+.services-item {
+  padding: 0 85px;
+  width: 400px;
 }
 
 .services-item h3 {
@@ -260,7 +262,6 @@ body {
 }
 
 .newsletter-description {
-  padding-bottom: 54px;
   color: #ffffff;
 }
 
@@ -281,7 +282,20 @@ body {
 /* Подвал */
 
 .page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
   background-color: #ffffff;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts {
+  width: 700px;
+  text-align: center;
 }
 
 .contact-number {
@@ -308,6 +322,8 @@ body {
 
 /* Страница каталога */
 .inner-header {
+  padding-left: 70px;
+  padding-right: 70px;
   background-image: url("../images/filter-background.jpg");
   background-color: #333333;
   background-repeat: no-repeat;
@@ -322,6 +338,7 @@ body {
 }
 
 .breadcrumbs {
+  padding-left: 0;
   list-style: none;
 }
 
@@ -330,11 +347,18 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter-wrapper {
+  display: flex;
+}
+
 .catalog-filter-group {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
 }
 
 .catalog-filter-list {
+  padding-left: 0;
   list-style: none;
 }
 
