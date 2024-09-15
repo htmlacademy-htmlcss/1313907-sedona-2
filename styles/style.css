@@ -307,7 +307,7 @@ body {
 }
 
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -318,7 +318,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* Страница каталога */
 .inner-header {
@@ -357,6 +357,15 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter-infrastructure {
+  margin-right: 70px;
+}
+
+.catalog-filter-cost {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
 .catalog-filter-list {
   padding-left: 0;
   list-style: none;
@@ -391,10 +400,18 @@ body {
 /* Список гостиниц в каталоге */
 
 .catalog-hotels {
+  padding-left: 70px;
+  padding-right: 70px;
   background-color: #ffffff;
 }
 
+.catalog-hotels-wrapper {
+  display: flex;
+}
+
 .catalog-hotel-numbers {
+
+  margin-right: 200px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -403,17 +420,32 @@ body {
 }
 
 .select-control {
+  width: 292px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
+.catalog-hotels-button-wrapper {
+  width: 160px;
+  margin-left: auto;
+}
+
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  width: 1060px;
   list-style: none;
+  box-sizing: border-box;
 }
 
 .product-card {
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 340px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }

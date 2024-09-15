@@ -72,7 +72,9 @@
             method="get"
           >
             <div class="catalog-filter-wrapper">
-              <fieldset class="catalog-filter-group">
+              <fieldset
+                class="catalog-filter-group catalog-filter-infrastructure"
+              >
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -148,7 +150,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-cost">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -188,6 +190,7 @@
         </header>
         <section class="catalog-hotels">
           <h2 class="visually-hidden">Список гостиниц</h2>
+          <div class="catalog-hotels-wrapper">
           <p class="catalog-hotel-numbers">
             Найдено гостиниц:
             <span class="catalog-hotel-numbers-current">38</span>
@@ -197,15 +200,18 @@
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          <a href="#" class="button button-border-black">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать полную карточку</span>
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="catalog-hotels-button-wrapper">
+            <a href="#" class="button button-border-black">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать полную карточку</span>
+            </a>
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
+        </div>
           <ul class="product-list">
             <li class="product-card">
               <a href="#" class="product-card-link">
