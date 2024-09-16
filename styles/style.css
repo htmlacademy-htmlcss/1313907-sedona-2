@@ -144,7 +144,7 @@ body {
 }
 
 .advantages-item {
-  height: 385px;
+  min-height: 385px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
