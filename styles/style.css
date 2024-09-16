@@ -95,7 +95,7 @@ body {
   background-color: #333333;
   background-image: url("../images/index-background-bottom.svg"),
     url("../images/index-background.jpg");
-  /* background-size: cover; */ /* при кавер картинка index-background-bottom отображается по другому, отличается от макета */
+  background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -106,6 +106,7 @@ body {
 }
 
 .introduce {
+  padding: 0 70px;
   text-align: center;
 }
 
@@ -200,6 +201,7 @@ body {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
 }
@@ -207,6 +209,7 @@ body {
 .services-item {
   padding: 0 85px;
   width: 400px;
+  box-sizing: border-box;
 }
 
 .services-item h3 {
@@ -437,22 +440,24 @@ body {
 }
 
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
   padding-left: 0;
-  width: 1060px;
   list-style: none;
-  box-sizing: border-box;
 }
 
 .product-card {
-  margin-right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 340px;
+  padding: 0 20px;
+  width: 340px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .product-card-link {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
