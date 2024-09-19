@@ -86,7 +86,6 @@ body {
 }
 
 .button {
-  padding: 8px 34px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -94,6 +93,10 @@ body {
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
+}
+
+.navigation-user-button {
+  padding: 8px 34px;
 }
 
 .main-index {
@@ -415,6 +418,8 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
   margin-bottom: 40px;
   padding-left: 0;
   list-style-type: none;
@@ -422,6 +427,7 @@ body {
 
 .breadcrumbs-link {
   display: block;
+  margin-right: 28px;
   font-size: 16px;
   color: #ffffff;
 }
@@ -462,6 +468,12 @@ body {
   line-height: 23px;
 }
 
+.catalog-filter-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
 .catalog-filter-button {
   font-weight: 700;
   font-size: 16px;
@@ -470,6 +482,11 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   border: 0;
+}
+
+.catalog-filter-button-show {
+  margin-bottom: 32px;
+  padding: 8px 50px;
 }
 
 .catalog-filter-reset {
@@ -487,11 +504,12 @@ body {
 
 .catalog-hotels-wrapper {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
 .catalog-hotel-numbers {
-
+  margin: 0;
   margin-right: 200px;
   font-weight: 700;
   font-size: 30px;
@@ -501,16 +519,32 @@ body {
 }
 
 .select-control {
+  padding: 14px 20px;
   width: 292px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .catalog-hotels-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   width: 160px;
   margin-left: auto;
+}
+
+.catalog-hotels-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .product-list {
@@ -525,8 +559,11 @@ body {
 }
 
 .product-card {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   width: 340px;
+  height: 423px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   box-sizing: border-box;
@@ -547,11 +584,31 @@ body {
   margin-bottom: 16px;
 }
 
+.product-card-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.product-card-description {
+  margin: 0;
+}
+
 .product-card-description b {
   font-weight: 400;
 }
 
 .button-more-detail {
+  padding: 8px 26px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -559,6 +616,7 @@ body {
 }
 
 .button-favourites {
+  padding: 8px 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -570,14 +628,48 @@ body {
   background-color: #7db54f;
 }
 
+.product-card-rating {
+  margin: 0;
+}
+
 /* Пагинация */
 .pagination {
   display: flex;
+  column-gap: 8px;
   margin: 0;
   padding-left: 0;
   list-style-type: none;
 }
 
+.pagination-link {
+  display: block;
+  padding: 12px 0;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-item-dots {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 /* Секция подписки на странице каталога */
 
