@@ -644,8 +644,8 @@ body {
 .pagination-link {
   display: block;
   padding: 12px 0;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
