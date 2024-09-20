@@ -48,7 +48,10 @@ body {
 .navigation-logo {
   margin-right: 28px;
   margin-bottom: -7px;
+  width: 140px;
+  height: 70px;
   z-index: 10;
+  overflow: hidden;
 }
 
 .navigation-list {
@@ -288,6 +291,7 @@ body {
 }
 
 .search-hotel .button {
+  padding: 8px 50px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -322,6 +326,11 @@ body {
   margin: 0;
   margin-bottom: 54px;
   color: #ffffff;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
 }
 
 .newsletter .field {
@@ -432,7 +441,7 @@ body {
   color: #ffffff;
 }
 
-.catalog-filter-wrapper {
+.catalog-filter {
   display: flex;
 }
 
@@ -468,13 +477,9 @@ body {
   line-height: 23px;
 }
 
-.catalog-filter-button-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-}
-
 .catalog-filter-button {
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -509,8 +514,11 @@ body {
 }
 
 .catalog-hotel-numbers {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-right: 200px;
+  width: 338px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -550,8 +558,7 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 20px;
+  gap: 20px;
   margin: 0;
   margin-bottom: 40px;
   padding-left: 0;
@@ -692,6 +699,11 @@ body {
 .inner-newsletter-description {
   margin: 0;
   margin-bottom: 54px;
+}
+
+.inner-newsletter-form {
+  display: flex;
+  justify-content: center;
 }
 
 .inner-newsletter-form .field {
