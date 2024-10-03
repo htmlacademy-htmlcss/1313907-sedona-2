@@ -70,6 +70,10 @@ body {
   margin-left: auto;
 }
 
+.navigation-user .navigation-item:nth-child(2) {
+  margin-right: 20px;
+}
+
 .navigation-link {
   display: block;
   padding: 20px 16px;
@@ -84,11 +88,27 @@ body {
 }
 
 .navigation-user .navigation-link {
+  padding: 22px 12px;
   min-width: 20px;
   min-height: 20px;
 }
 
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+
 .button {
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -96,6 +116,7 @@ body {
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .navigation-user-button {
@@ -266,6 +287,17 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.services-list h3::before {
+  content: " ";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+
+}
+
 /* Секция поиск отеля */
 
 .search-hotel {
@@ -410,6 +442,13 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-logo-link {
+  display: block;
+  width: 115px;
+  height: 33px;
+  overflow: hidden;
 }
 
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
