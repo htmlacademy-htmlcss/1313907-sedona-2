@@ -116,7 +116,7 @@ body {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   border: 2px solid #756257;
   height: 0;
 }
