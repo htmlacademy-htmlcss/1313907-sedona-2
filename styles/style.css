@@ -294,8 +294,22 @@ body {
   height: 72px;
   margin: 0 auto;
   margin-bottom: 30px;
-  outline: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center;
 
+}
+
+.services-list .services-item:nth-child(1) h3::before {
+  background-image: url("../images/house-icon.svg");
+}
+
+.services-list .services-item:nth-child(2) h3::before {
+  background-image: url("../images/food-icon.svg");
+}
+
+.services-list .services-item:nth-child(3) h3::before {
+  background-image: url("../images/gift-icon.svg");
 }
 
 /* Секция поиск отеля */
@@ -420,15 +434,20 @@ body {
 }
 
 .footer-social-item {
+  position: relative;
   width: 47px;
   height: 40px;
-  outline: 1px solid blue;
-}
 
-.footer-social-link {
-  display: block;
-  min-width: 24px;
-  min-height: 17px;
+  outline: 1px solid black;
+}
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
 }
 
 .footer-contacts {
