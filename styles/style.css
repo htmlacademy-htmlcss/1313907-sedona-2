@@ -117,8 +117,8 @@ body {
   left: 16px;
   right: 16px;
   bottom: -1px;
-  border: 2px solid #756257;
-  height: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-user .navigation-link {
@@ -151,6 +151,7 @@ body {
   background-color: #756157;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .navigation-user-button {
@@ -174,11 +175,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
   border: none;
   outline: none;
-}
-
-.navigation-user-button:disabled,
-.search-hotel .button:disabled {
-  background-color: #e5e5e5;
 }
 
 .main-index {
@@ -364,14 +360,14 @@ body {
 }
 
 .services-list h3::before {
-  content: " ";
+  content: "";
   display: block;
   width: 75px;
   height: 72px;
   margin: 0 auto;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: 75px 72px;
+  background-size: contain;
   background-position: center;
 
 }
@@ -419,6 +415,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 /* Секция для подписки на новости */
@@ -483,9 +480,10 @@ body {
   border-radius: 0 4px 4px 0;
   border: none;
   outline: none;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-.button-newsletter:hover {
+.button-newsletter:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
@@ -493,7 +491,7 @@ body {
   background-color: #68a2ca;
 }
 
-.button-newsletter:active {
+.button-newsletter:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -528,12 +526,13 @@ body {
 
 .footer-social-item {
   position: relative;
-  width: 47px;
-  height: 40px;
+
 }
 
 .footer-social-link {
   display: block;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-social-icon {
@@ -543,17 +542,18 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  fill: #83B3D3;
 }
 
-.footer-social-link:hover .footer-social-icon path {
+.footer-social-link:hover .footer-social-icon {
   fill: #68a2ca;
 }
 
-.footer-social-link:focus .footer-social-icon path {
+.footer-social-link:focus .footer-social-icon {
   fill: #68a2ca;
 }
 
-.footer-social-link:active .footer-social-icon path {
+.footer-social-link:active .footer-social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -588,13 +588,14 @@ body {
   width: 115px;
   height: 33px;
   overflow: hidden;
+  fill: #000000;
 }
 
-.footer-logo-link:hover .footer-logo-icon path {
+.footer-logo-link:hover .footer-logo-icon {
   fill: #756157;
 }
 
-.footer-logo-link:focus .footer-logo-icon path {
+.footer-logo-link:focus .footer-logo-icon {
   fill: #756157;
 }
 
@@ -743,6 +744,7 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   border: 0;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .catalog-filter-button-show {
@@ -813,6 +815,7 @@ body {
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
+  transition: border 250ms ease-in-out;
 }
 
 .catalog-hotels-button-active {
@@ -932,6 +935,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button-more-detail:hover {
@@ -947,12 +951,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-more-detail:disabled {
-  background-color: #e5e5e5;
-}
-
-
-
 .button-favourites {
   grid-column: 2/3;
   padding: 8px 10px;
@@ -962,6 +960,7 @@ body {
   line-height: 20px;
   text-decoration: none;
   background-color: #82b3d3;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button-favourites:hover {
@@ -978,10 +977,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
   border: none;
-}
-
-.button-favourites:disabled {
-  background-color: #e5e5e5;
 }
 
 .button-favourites-now {
@@ -1005,22 +1000,30 @@ body {
   border: none;
 }
 
-.button-favourites-now:disabled {
-  background-color: #e5e5e5;
+.star {
+ width: 120px;
+ height: 17px;
 }
 
-.product-card-stars {
-  display: flex;
-  column-gap: 6px;
-  grid-column: 1/2;
-}
-
-.product-card-stars span {
-  min-width: 18px;
-  min-height: 17px;
+.star::before {
+  content: "";
+  display: block;
+  height: 17px;
   background-image: url("../images/star.svg");
-  background-repeat: no-repeat;
-  background-size: 18px 17px;
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.star-4 {
+  width: 87px;
+}
+
+.star-3 {
+  width: 64px;
+}
+
+.star-2 {
+  width: 41px;
 }
 
 .product-card-rating {
