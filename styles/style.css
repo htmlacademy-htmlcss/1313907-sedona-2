@@ -732,6 +732,10 @@ body {
 
 }
 
+.control {
+  line-height: 23px;
+}
+
 .catalog-filter-cost .catalog-filter-list {
   display: flex;
   column-gap: 2px;
@@ -776,8 +780,11 @@ body {
   color: #ffffff;
 }
 
-.control {
-  line-height: 23px;
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-button {
