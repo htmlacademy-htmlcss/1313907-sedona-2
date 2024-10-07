@@ -706,6 +706,7 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  border: none;
 }
 
 .catalog-filter-infrastructure {
@@ -723,11 +724,56 @@ body {
 }
 
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
 
+}
+
+.catalog-filter-cost .catalog-filter-list {
+  display: flex;
+  column-gap: 2px;
+}
+
+.catalog-filter-cost .catalog-filter-price {
+  width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.catalog-filter-cost .catalog-filter-item:first-child input{
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-cost .catalog-filter-item:last-child input{
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-cost input {
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, outline 250ms ease-in-out;
+}
+
+.catalog-filter-cost input:not(:disabled):hover,
+.catalog-filter-cost input:not(:disabled):focus,
+.catalog-filter-cost input:not(:disabled):focus-visible {
+  background-color: #e6e6e6;
+}
+
+.catalog-filter-cost input:not(:disabled):focus,
+.catalog-filter-cost input:not(:disabled):focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.catalog-filter-cost input:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-filter-cost input:disabled::placeholder {
+  color: #ffffff;
 }
 
 .control {
