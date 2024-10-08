@@ -142,20 +142,21 @@ body {
 
 .button {
   display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #756157;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .navigation-user-button {
-  padding: 8px 34px;
-  font-weight: 700;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .navigation-user-button:hover,
@@ -408,13 +409,10 @@ body {
   line-height: 26px;
 }
 
-.search-hotel .button {
-  padding: 8px 50px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
+.search-hotel-button {
+  padding-left: 50px;
+  padding-right: 50px;
   line-height: 36px;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 /* Секция для подписки на новости */
@@ -628,6 +626,10 @@ body {
   z-index: 2;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   margin: auto;
   padding: 64px 70px;
@@ -661,11 +663,27 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
+  padding-right: 65px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.booking-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.registration-field {
+  padding: 12px 20px;
+  width: 440px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  border: none;
 }
 
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
