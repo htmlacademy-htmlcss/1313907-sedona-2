@@ -191,7 +191,7 @@
                     type="number"
                     max="10000"
                     name="max-price"
-                    id="maxprice"
+                    id="max-price"
                     placeholder="90"
                   />
                 </li>
@@ -234,11 +234,13 @@
               Найдено гостиниц:
               <span class="catalog-hotel-numbers-current">&nbsp;38</span>
             </p>
-            <select aria-label="Сортировка" class="select-control">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <div class="select">
+              <select aria-label="Сортировка" class="select-control">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="popular">Сначала популярное</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+            </div>
             <div class="catalog-hotels-button-wrapper">
               <a
                 href="#"
