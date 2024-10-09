@@ -306,34 +306,80 @@
             method="post"
           >
             <p class="booking-date">
-              <label for="arrival-date" class="booking-label">Дата Заезда:</label>
+              <label for="arrival-date" class="booking-label"
+                >Дата Заезда:</label
+              >
               <input
-                  class="field modal-field registration-field"
-                  type="text"
-                  id="arrival-date"
-                  name="arrival-date"
-                  placeholder="20 апреля 2020"
-                  required
-                />
+                class="field modal-field registration-field"
+                type="text"
+                id="arrival-date"
+                name="arrival-date"
+                placeholder="20 апреля 2020"
+                required
+              />
             </p>
             <p class="booking-date">
-              <label for="departure-date" class="booking-label">Дата Выезда:</label>
+              <label for="departure-date" class="booking-label"
+                >Дата Выезда:</label
+              >
               <input
-                  type="text"
-                  class="field modal-field registration-field"
-                  id="departure-date"
-                  name="departure-date"
-                  placeholder="1 сентября 2023"
-                  required
-                />
+                type="text"
+                class="field modal-field registration-field"
+                id="departure-date"
+                name="departure-date"
+                placeholder="1 сентября 2023"
+                required
+              />
             </p>
             <p class="numbers-adults">
               <label for="adults" class="booking-label">Взрослые:</label>
-              <input class="numbers-field modal-field" type="number" id="adults" value="2" required />
+              <input
+                class="numbers-field modal-field"
+                type="number"
+                id="adults"
+                value="2"
+                required
+              />
             </p>
             <p class="numbers-children">
-              <label class="booking-label">Дети:</label>
-              <input class="numbers-field modal-field" type="number" id="children" value="2"/>
+              <span class="booking-label booking-label-icon">
+                <label class="booking-label">Дети:</label>
+                <span class="tooltip">
+                  <button
+                    class="tooltip-toggle"
+                    type="button"
+                    aria-labelledby="tooltip-label-numbers"
+                  >
+                    <svg
+                      class="tooltip-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3"
+                      height="12"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <span
+                    class="tooltip-text"
+                    role="tooltip"
+                    id="tooltip-label-numbers"
+                    >Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются
+                    бесплатно.</span
+                  >
+                </span>
+              </span>
+              <input
+                class="numbers-field modal-field"
+                type="number"
+                id="children"
+                value="2"
+              />
             </p>
             <button class="button button-modal" type="submit">Найти</button>
           </form>
