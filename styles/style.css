@@ -679,34 +679,75 @@ body {
   display: grid;
   grid-template-columns: 247px 247px;
   column-gap: 88px;
+  row-gap: 48px;
+}
+
+.form-registration p {
+  margin: 0;
 }
 
 .booking-date {
   grid-column: 1/-1;
-}
-
-.numbers-adults {
-  grid-column: 1/2;
-}
-
-.numbers-children {
-  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 137px auto;
 }
 
 .booking-label {
+  align-content: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
 }
 
-.registration-field {
-  padding: 12px 20px;
-  width: 440px;
+.modal-field {
+  align-content: center;
+  justify-self: end;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
   border-radius: 4px;
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
+}
+
+.modal-field::placeholder {
+  color: #000000;
+}
+
+.registration-field {
+  padding: 12px 20px;
+  width: 440px;
+}
+
+.numbers-adults {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 137px auto;
+  width: 252px;
+}
+
+.numbers-children {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 137px auto;
+  width: 242px;
+
+}
+
+.numbers-field {
+  padding: 14px 0;
+  width: 110px;
+  text-align: center;
+  appearance: textfield;
+}
+
+.numbers-field::-webkit-outer-spin-button,
+.numbers-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .button-modal {
@@ -1102,7 +1143,6 @@ body {
 .select-control:disabled {
   border-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
-  /* fill: rgba(0, 0, 0, 0.3); */
 }
 
 .catalog-hotels-button-wrapper {

@@ -293,7 +293,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-registration">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -306,44 +306,34 @@
             method="post"
           >
             <p class="booking-date">
-              <label class="booking-label">
-                Дата Заезда:
-                <input
-                  class="field registration-field"
+              <label for="arrival-date" class="booking-label">Дата Заезда:</label>
+              <input
+                  class="field modal-field registration-field"
                   type="text"
                   id="arrival-date"
                   name="arrival-date"
+                  placeholder="20 апреля 2020"
                   required
                 />
-              </label>
             </p>
             <p class="booking-date">
-              <label class="booking-label">
-                Дата Выезда:
-                <input
+              <label for="departure-date" class="booking-label">Дата Выезда:</label>
+              <input
                   type="text"
-                  class="field registration-field"
+                  class="field modal-field registration-field"
                   id="departure-date"
                   name="departure-date"
+                  placeholder="1 сентября 2023"
                   required
                 />
-              </label>
             </p>
             <p class="numbers-adults">
-              <label class="booking-label">
-                Взрослые:
-                <div class="minus-adults"></div>
-                <input class="adults" type="number" id="adults" />
-                <div class="plus-adults"></div>
-              </label>
+              <label for="adults" class="booking-label">Взрослые:</label>
+              <input class="numbers-field modal-field" type="number" id="adults" value="2" required />
             </p>
             <p class="numbers-children">
-              <label class="booking-label">
-                Дети:
-                <div class="minus-adults"></div>
-                <input class="adults" type="number" id="children" />
-                <div class="plus-adults"></div>
-              </label>
+              <label class="booking-label">Дети:</label>
+              <input class="numbers-field modal-field" type="number" id="children" value="2"/>
             </p>
             <button class="button button-modal" type="submit">Найти</button>
           </form>
