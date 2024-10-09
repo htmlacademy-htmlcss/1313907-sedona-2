@@ -293,7 +293,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-registration">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -305,23 +305,23 @@
             class="form-registration"
             method="post"
           >
-            <p class="arrival-booking">
+            <p class="booking-date">
               <label class="booking-label">
                 Дата Заезда:
                 <input
                   class="field registration-field"
-                  type="date"
+                  type="text"
                   id="arrival-date"
                   name="arrival-date"
                   required
                 />
               </label>
             </p>
-            <p class="departure-booking">
+            <p class="booking-date">
               <label class="booking-label">
                 Дата Выезда:
                 <input
-                  type="date"
+                  type="text"
                   class="field registration-field"
                   id="departure-date"
                   name="departure-date"
@@ -329,13 +329,15 @@
                 />
               </label>
             </p>
-            <p>
+            <p class="numbers-adults">
               <label class="booking-label">
                 Взрослые:
                 <div class="minus-adults"></div>
                 <input class="adults" type="number" id="adults" />
                 <div class="plus-adults"></div>
               </label>
+            </p>
+            <p class="numbers-children">
               <label class="booking-label">
                 Дети:
                 <div class="minus-adults"></div>
@@ -343,7 +345,7 @@
                 <div class="plus-adults"></div>
               </label>
             </p>
-            <button class="button" type="submit">Найти</button>
+            <button class="button button-modal" type="submit">Найти</button>
           </form>
         </section>
       </div>

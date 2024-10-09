@@ -141,13 +141,14 @@ body {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: #756157;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -410,6 +411,7 @@ body {
 }
 
 .search-hotel-button {
+  display: inline-block;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 36px;
@@ -471,31 +473,32 @@ body {
 }
 
 .button-newsletter {
-  padding: 8px 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-family: inherit;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
-  border: none;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-.button-newsletter:not(:disabled):hover {
+.button-newsletter:not(:disabled):hover,
+.catalog-filter-button:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
-.button-newsletter:focus-visible {
+.button-newsletter:not(:disabled):focus-visible,
+.catalog-filter-button:not(:disabled):focus-visible {
   outline: 3px solid #68a2ca;
 }
 
-.button-newsletter:not(:disabled):active {
+.button-newsletter:not(:disabled):active,
+.catalog-filter-button:not(:disabled):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-newsletter:disabled {
+.button-newsletter:disabled,
+.catalog-filter-button:disabled {
   background-color: #e5e5e5;
 }
 
@@ -640,6 +643,7 @@ body {
 
 .modal-registration {
   width: 717px;
+  box-sizing: border-box;
 }
 
 .modal-content {
@@ -671,6 +675,24 @@ body {
   text-transform: uppercase;
 }
 
+.form-registration {
+  display: grid;
+  grid-template-columns: 247px 247px;
+  column-gap: 88px;
+}
+
+.booking-date {
+  grid-column: 1/-1;
+}
+
+.numbers-adults {
+  grid-column: 1/2;
+}
+
+.numbers-children {
+  grid-column: 2/3;
+}
+
 .booking-label {
   font-family: inherit;
   font-weight: 700;
@@ -684,6 +706,17 @@ body {
   border-radius: 4px;
   background-color: #f2f2f2;
   border: none;
+  box-sizing: border-box;
+}
+
+.button-modal {
+  grid-column: 1/-1;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #83b3d3;
 }
 
 /* Убирает из поля видимости пользователя, оставляет для роботов и скринридера */
@@ -961,27 +994,47 @@ body {
   right: 0;
 }
 
+.catalog-filter-button-wrapper button:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .catalog-filter-button {
-  display: block;
   margin: 0 auto;
-  font-weight: 700;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: #82b3d3;
-  border: 0;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
-.catalog-filter-button-show {
-  margin-bottom: 32px;
-  padding: 8px 50px;
+.catalog-filter-button:not(:disabled):focus-visible {
+  background-color: #68a2ca;
+  outline: none;
 }
 
-.catalog-filter-reset {
+.button-reset {
   background-color: transparent;
 }
+
+.button-reset:not(:disabled):hover {
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.button-reset:not(:disabled):focus-visible {
+  outline: 3px solid #83b3d3;
+  background-color: transparent;
+}
+
+.button-reset:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+}
+
 
 /* Список гостиниц в каталоге */
 
@@ -1038,11 +1091,11 @@ body {
 }
 
 .select-control:not(:disabled):hover,
-.select-control:not(:disabled):focus-visible-visible {
+.select-control:not(:disabled):focus-visible {
   border: 2px solid #68a2ca;
 }
 
-.select-control:not(:disabled):focus-visible-visible {
+.select-control:not(:disabled):focus-visible {
   outline: none;
 }
 
@@ -1085,7 +1138,7 @@ body {
   border: 2px solid #68a2ca;
 }
 
-.catalog-hotels-button:focus-visible-visible {
+.catalog-hotels-button:focus-visible {
   outline: none;
 }
 
@@ -1183,13 +1236,11 @@ body {
 
 .button-more-detail {
   grid-column: 1/2;
-  padding: 8px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button-more-detail:hover {
@@ -1207,14 +1258,12 @@ body {
 
 .button-favourites {
   grid-column: 2/3;
-  padding: 8px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
   background-color: #82b3d3;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button-favourites:hover {
