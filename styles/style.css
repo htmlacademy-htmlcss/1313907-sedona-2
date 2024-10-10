@@ -645,6 +645,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -656,11 +657,12 @@ body {
 }
 
 .modal {
-  margin: 55px auto;
   padding: 64px 70px;
+  margin: auto;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   background-color: #fff;
   border-radius: 30px;
+  align-items: end;
 }
 
 .modal-registration {
@@ -685,6 +687,7 @@ body {
   background-position: center; */
   /* Не могу разобраться с mask-image */
   mask-image: url(../images/close.svg);
+  background-color: black;
   mask-repeat: no-repeat;
   mask-position: center;
   border: none;
@@ -1204,7 +1207,7 @@ body {
 }
 
 .catalog-filter-cost input {
-  cursor: pointer;
+  font-weight: 700;
 }
 
 .catalog-filter-cost input:not(:disabled):hover,
