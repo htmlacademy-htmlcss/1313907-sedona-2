@@ -140,6 +140,28 @@ body {
   background-position: center;
 }
 
+/* Sticker */
+
+.favorites-sticker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22px;
+  right: 3px;
+  transform: translateY(-50%);
+  min-width: 20px;
+  min-height: 20px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 100%;
+}
+
 .button {
   display: block;
   padding-top: 8px;
@@ -660,7 +682,8 @@ body {
   /* background-color: #f2f2f2;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
-  background-position: center; */ /* Не могу разобраться с mask-image */
+  background-position: center; */
+  /* Не могу разобраться с mask-image */
   mask-image: url(../images/close.svg);
   mask-repeat: no-repeat;
   mask-position: center;
