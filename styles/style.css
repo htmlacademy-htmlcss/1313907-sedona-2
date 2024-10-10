@@ -652,7 +652,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 }
 
 .modal {
@@ -841,7 +841,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  margin-top: 6px;
+  margin-top: 15px;
   display: none;
   padding: 15px 18px 18px 22px;
   font-family: inherit;
@@ -855,18 +855,19 @@ body {
   border-radius: 10px;
 }
 
-.tooltip-text::after {
+.tooltip-text::before {
   content: "";
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  display: block;
-  margin-left: auto;
   margin-right: auto;
-  width: 19px;
-  height: 9px;
-  background-image: url("../images/tooltip-arrow.svg");
+  margin-left: auto;
+  width: 0;
+  height: 0;
+  border-bottom: 14px solid #333333;
+  border-right: 14px solid transparent;
+  transform: translate(-3%, 50%) rotate(135deg);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1387,7 +1388,6 @@ body {
 }
 
 .product-card-description {
-  display: flex;
   grid-column: 1/2;
   margin: 0;
 }
@@ -1467,13 +1467,14 @@ body {
 }
 
 .star {
+  align-self: center;
   width: 120px;
   height: 17px;
 }
 
 .star::before {
-  content: "";
   display: block;
+  content: "";
   height: 17px;
   background-image: url("../images/star.svg");
   background-repeat: space no-repeat;
@@ -1496,6 +1497,9 @@ body {
   grid-column: 2/3;
   justify-self: end;
   margin: 0;
+  padding: 9px 22px 8px 23px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 /* Пагинация */
