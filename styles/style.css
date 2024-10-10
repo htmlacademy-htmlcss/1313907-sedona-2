@@ -824,7 +824,7 @@ body {
   background-color: #83b3d3;
 }
 
-.button-modal:not(:disabled):hover{
+.button-modal:not(:disabled):hover {
   background-color: #68a2ca;
 }
 
@@ -1130,6 +1130,31 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.control-input[type="checkbox"]:focus-visible + .control-mark,
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark,
+.control-input[type="radio"]:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
+.control-input[type="checkbox"]:disabled ~ .control-label,
+.control-input[type="radio"]:disabled ~ .control-label {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark {
   position: absolute;
   width: 20px;
@@ -1138,6 +1163,20 @@ body {
   background-size: 13px 10px;
   background-repeat: no-repeat;
   background-position: 55% 55%;
+}
+
+.control-housing .control-mark {
+  border-radius: 100%;
+}
+
+.control-housing .control-input[type="radio"]:checked + .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/radio.svg");
+  background-size: 10px 11px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cost-item-price {
@@ -1169,13 +1208,11 @@ body {
 }
 
 .catalog-filter-cost input:not(:disabled):hover,
-.catalog-filter-cost input:not(:disabled):focus-visible,
-.catalog-filter-cost input:not(:disabled):focus-visible-visible {
+.catalog-filter-cost input:not(:disabled):focus-visible {
   background-color: #e6e6e6;
 }
 
-.catalog-filter-cost input:not(:disabled):focus-visible,
-.catalog-filter-cost input:not(:disabled):focus-visible-visible {
+.catalog-filter-cost input:not(:disabled):focus-visible {
   outline: 3px solid #83b3d3;
 }
 
@@ -1183,7 +1220,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-filter-cost input:disabled::placeholder {
+.catalog-filter-cost input:disabled {
   color: #ffffff;
 }
 
@@ -1227,7 +1264,7 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:focus-visible-visible {
+.range-toggle:focus-visible {
   outline: none;
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
