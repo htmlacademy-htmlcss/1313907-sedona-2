@@ -652,11 +652,11 @@ body {
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 }
 
 .modal {
-  margin: auto;
+  margin: 55px auto;
   padding: 64px 70px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   background-color: #fff;
@@ -727,6 +727,7 @@ body {
 }
 
 .booking-date {
+  position: relative;
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 137px auto;
@@ -738,6 +739,26 @@ body {
   font-weight: 700;
   font-size: 20px;
   color: #000000;
+}
+
+.warning-text {
+  position: absolute;
+  top: 50px;
+  left: 137px;
+  padding: 0 25px;
+  font-size: 16px;
+}
+
+.warning-text-red {
+  color: #ff5757;
+}
+
+.calendar-label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .modal-field {
@@ -758,6 +779,7 @@ body {
 }
 
 .registration-field {
+  margin-bottom: 4px;
   padding: 12px 20px;
   width: 440px;
 }
@@ -778,10 +800,12 @@ body {
 }
 
 .numbers-field {
-  padding: 14px 0;
-  width: 110px;
+  padding: 12px 0;
+  width: 31px;
   text-align: center;
   appearance: textfield;
+  box-sizing: border-box;
+  border-radius: 0;
 }
 
 .numbers-field::-webkit-outer-spin-button,
@@ -798,6 +822,73 @@ body {
   font-size: 20px;
   line-height: 24px;
   background-color: #83b3d3;
+}
+
+.button-modal:not(:disabled):hover{
+  background-color: #68a2ca;
+}
+
+.button-modal:not(:disabled):focus-visible {
+  outline: 3px solid #68a2ca;
+  background-color: #68a2ca;
+}
+
+.button-modal:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-modal:disabled {
+  background-color: #e5e5e5;
+}
+
+.field-wrapper {
+  position: relative;
+  display: flex;
+  width: 111px;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+}
+
+.minus {
+  left: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.plus {
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.count-icon {
+  fill: rgba(117, 97, 87, 0.3);
+  border-radius: 4px;
+}
+
+.count:hover .count-icon {
+  fill: #000000;
+}
+
+.count:focus-visible {
+  outline: none;
+}
+
+.count:focus-visible .count-icon {
+  fill: #000000;
+  outline: 3px solid #82b3d3;
+}
+
+.count:active .count-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Tooltip */
