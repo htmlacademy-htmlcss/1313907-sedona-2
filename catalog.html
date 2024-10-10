@@ -43,6 +43,9 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="favorites-sticker">
+                  <span class="favorites-number">12</span>
+                </span>
               </a>
             </li>
             <li class="navigation-item">
@@ -174,26 +177,30 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <ul class="catalog-cost-list">
                 <li class="catalog-cost-item">
-                  <label for="min-price">до</label>
-                  <input
-                    class="cost-item-price"
-                    type="number"
-                    min="0"
-                    name="min-price"
-                    id="min-price"
-                    placeholder="0"
-                  />
+                  <label class="price-label">
+                    <span class="price-label-text">от</span>
+                    <input
+                      class="cost-item-price"
+                      type="number"
+                      min="0"
+                      name="min-price"
+                      id="min-price"
+                      value="0"
+                    />
+                  </label>
                 </li>
                 <li class="catalog-cost-item">
-                  <label for="max-price">от</label>
-                  <input
-                    class="cost-item-price"
-                    type="number"
-                    max="10000"
-                    name="max-price"
-                    id="max-price"
-                    placeholder="90"
-                  />
+                  <label class="price-label">
+                    <span class="price-label-text">до</span>
+                    <input
+                      class="cost-item-price"
+                      type="number"
+                      max="10000"
+                      name="max-price"
+                      id="max-price"
+                      value="9000"
+                    />
+                  </label>
                 </li>
               </ul>
               <div class="range-scale">
@@ -212,10 +219,7 @@
               </div>
             </fieldset>
             <div class="catalog-filter-button-wrapper">
-              <button
-                class="button catalog-filter-button"
-                type="submit"
-              >
+              <button class="button catalog-filter-button" type="submit">
                 Применить
               </button>
               <button

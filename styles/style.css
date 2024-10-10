@@ -1051,16 +1051,11 @@ body {
 .cost-item-price {
   width: 143px;
   padding: 12px 20px;
+  padding-right: 45px;
   font: inherit;
   box-sizing: border-box;
   border: none;
   appearance: textfield;
-}
-
-.cost-item-price::placeholder {
-  color: inherit;
-  font: inherit;
-  font-weight: 700;
 }
 
 .cost-item-price::-webkit-outer-spin-button,
@@ -1098,6 +1093,18 @@ body {
 
 .catalog-filter-cost input:disabled::placeholder {
   color: #ffffff;
+}
+
+.price-label {
+  position: relative;
+}
+
+.price-label-text {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .range-scale {
@@ -1319,7 +1326,9 @@ body {
   margin: 0;
   margin-bottom: 40px;
   padding-left: 0;
+  padding-bottom: 40px;
   list-style-type: none;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .product-card {
