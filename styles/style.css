@@ -180,6 +180,7 @@ body {
 .navigation-user-button {
   padding-left: 34px;
   padding-right: 34px;
+  font-size: 16px;
 }
 
 .navigation-user-button:hover,
@@ -228,6 +229,7 @@ body {
 
 .introduce {
   padding: 69px 70px;
+  padding-bottom: 90px;
   text-align: center;
 }
 
@@ -269,6 +271,11 @@ body {
   min-height: 385px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-higher {
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .advantages-image {
@@ -410,6 +417,7 @@ body {
 /* Секция поиск отеля */
 
 .search-hotel {
+  margin-top: -18px;
   padding: 96px 70px;
   text-align: center;
   background-color: #ffffff;
