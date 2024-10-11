@@ -1095,7 +1095,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .catalog-filter-cost {
@@ -1113,13 +1113,13 @@ body {
   display: flex;
   column-gap: 2px;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
   padding-left: 0;
   list-style: none;
 }
 
 .catalog-filter-title {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-left: 0;
   font-weight: 700;
   font-size: 20px;
@@ -1203,7 +1203,7 @@ body {
 
 .cost-item-price {
   width: 143px;
-  padding: 12px 20px;
+  padding: 13px 20px;
   padding-right: 45px;
   font: inherit;
   box-sizing: border-box;
@@ -1306,14 +1306,19 @@ body {
   right: 0;
 }
 
+.catalog-filter-button-wrapper {
+  align-self: flex-end;
+}
+
 .catalog-filter-button-wrapper button:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .catalog-filter-button {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   background-color: #82b3d3;
@@ -1325,6 +1330,8 @@ body {
 }
 
 .button-reset {
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: transparent;
 }
 
@@ -1472,9 +1479,10 @@ body {
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 17px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   padding-left: 0;
   padding-bottom: 40px;
   list-style-type: none;
@@ -1512,6 +1520,7 @@ body {
 .product-card-image {
   display: block;
   object-fit: cover;
+  margin: 0;
 }
 
 .product-card-title-link {
@@ -1534,6 +1543,7 @@ body {
 
 .product-card-title {
   margin: 0;
+  font-size: 24px;
 }
 
 .product-card-description {
@@ -1734,7 +1744,7 @@ body {
 /* Секция подписки на странице каталога */
 
 .inner-newsletter {
-  padding: 96px 70px 104px;
+  padding: 156px 70px 106px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -1752,6 +1762,9 @@ body {
 .inner-newsletter-description {
   margin: 0;
   margin-bottom: 54px;
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .inner-newsletter-form {
