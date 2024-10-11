@@ -10,7 +10,7 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo">
+          <a class="navigation-logo" href="index.html">
             <img
               class="page-header-logo"
               src="images/logo.svg"
@@ -23,7 +23,6 @@
             <li class="navigation-item">
               <a
                 class="navigation-link navigation-link-current"
-                href="index.html"
                 >Главная</a
               >
             </li>
@@ -36,12 +35,12 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="search.html">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="favorites.html">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-sticker">
                   <span class="favorites-number">12</span>
@@ -49,7 +48,9 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button navigation-user-button" href="#"> Хочу сюда! </a>
+              <a class="button navigation-user-button" href="want.html">
+                Хочу сюда!
+              </a>
             </li>
           </ul>
         </nav>
@@ -180,9 +181,9 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="catalog.html" class="button search-hotel-button"
-            >Поиск гостиницы в Седоне</a
-          >
+          <button class="button search-hotel-button" type="button">
+            Поиск гостиницы в Седоне
+          </button>
         </section>
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -191,7 +192,7 @@
             честное бойскаутское!
           </p>
 
-          <form action="#" class="newsletter-form" method="post">
+          <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
             <label for="newsletter-email" class="visually-hidden"
               >Введите свой email</label
             >
@@ -278,7 +279,10 @@
           >
         </section>
         <section class="footer-logo">
-          <a class="footer-logo-link" href="https://htmlacademy.ru/">
+          <a
+            class="footer-logo-link"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+          >
             <svg
               class="footer-logo-icon"
               role="img"
@@ -320,9 +324,16 @@
                 placeholder="20 апреля 2020"
                 required
               />
-              <span class="warning-text warning-text-red">Мы не можем отправить вас в прошлое.</span>
+              <span class="warning-text warning-text-red"
+                >Мы не можем отправить вас в прошлое.</span
+              >
               <span class="calendar-label">
-                <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <svg
+                  class="calendar-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                >
                   <path
                     d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"
                   />
@@ -347,9 +358,16 @@
                 placeholder="1 сентября 2023"
                 required
               />
-              <span class="warning-text">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="warning-text"
+                >На эти даты есть свободные номера. Пока есть.</span
+              >
               <span class="calendar-label">
-                <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <svg
+                  class="calendar-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                >
                   <path
                     d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"
                   />

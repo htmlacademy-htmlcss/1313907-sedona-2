@@ -96,17 +96,17 @@ body {
   text-transform: capitalize;
 }
 
-.navigation-link:hover {
+.navigation-link[href]:hover {
   background-color: rgba(104, 162, 202, 0.2);
 }
 
-.navigation-link:focus-visible {
+.navigation-link[href]:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 2px #68a3ca;
   border-radius: 4px;
 }
 
-.navigation-link:active {
+.navigation-link[href]:active {
   transform: scale(0.9);
 }
 
@@ -433,9 +433,11 @@ body {
 }
 
 .search-hotel-button {
-  display: inline-block;
+  margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   line-height: 36px;
 }
 
@@ -712,7 +714,7 @@ body {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:active::before  {
+.modal-close-button:active::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1563,6 +1565,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   background-color: #82b3d3;
