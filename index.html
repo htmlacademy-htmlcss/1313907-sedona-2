@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico">
     <title>Седона</title>
   </head>
   <body>
@@ -96,7 +97,9 @@
                 alt="Фото улицы в городе Седона"
               />
             </li>
-            <li class="advantages-item advantages-item-wrapper advantages-item-higher">
+            <li
+              class="advantages-item advantages-item-wrapper advantages-item-higher"
+            >
               <h3 class="advantages-title">
                 Небольшая<br />
                 площадь
@@ -116,7 +119,9 @@
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="advantages-item advantages-item-wrapper advantages-item-higher">
+            <li
+              class="advantages-item advantages-item-wrapper advantages-item-higher"
+            >
               <h3 class="advantages-title">
                 Мало<br />
                 туристов
@@ -189,18 +194,17 @@
             Только полезная информация и никакого спама,<br />
             честное бойскаутское!
           </p>
-
           <form
-            action="https://echo.htmlacademy.ru/"
             class="newsletter-form"
+            action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label for="newsletter-email" class="visually-hidden"
+            <label class="visually-hidden" for="newsletter-email"
               >Введите свой email</label
             >
             <input
-              type="email"
               class="field"
+              type="email"
               placeholder="Ваш e-mail"
               name="newsletter-email"
               id="newsletter-email"
@@ -216,7 +220,7 @@
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="https://vk.com/htmlacademy" class="footer-social-link">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
                 <svg
                   class="footer-social-icon"
                   aria-hidden="true"
@@ -235,7 +239,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://t.me/htmlacademy" class="footer-social-link">
+              <a class="footer-social-link" href="https://t.me/htmlacademy">
                 <svg
                   class="footer-social-icon"
                   aria-hidden="true"
@@ -254,8 +258,8 @@
             </li>
             <li class="footer-social-item">
               <a
-                href="https://www.youtube.com/user/htmlacademyru"
                 class="footer-social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
               >
                 <svg
                   class="footer-social-icon"
@@ -276,7 +280,7 @@
           </ul>
         </section>
         <section class="footer-contacts">
-          <a href="tel:+7(812)812-12-12" class="contact-number"
+          <a class="contact-number" href="tel:+7(812)812-12-12"
             >+7 (812) 812-12-12</a
           >
         </section>
@@ -310,12 +314,12 @@
             <span class="visually-hidden">Закрыть</span>
           </button>
           <form
-            action="https://echo.htmlacademy.ru/"
             class="form-registration"
+            action="https://echo.htmlacademy.ru/"
             method="post"
           >
             <p class="booking-date">
-              <label for="arrival-date" class="booking-label"
+              <label class="booking-label" for="arrival-date"
                 >Дата Заезда:</label
               >
               <input
@@ -332,6 +336,8 @@
               <span class="calendar-label">
                 <svg
                   class="calendar-icon"
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -349,12 +355,12 @@
               </span>
             </p>
             <p class="booking-date">
-              <label for="departure-date" class="booking-label"
+              <label class="booking-label" for="departure-date"
                 >Дата Выезда:</label
               >
               <input
-                type="text"
                 class="field modal-field registration-field"
+                type="text"
                 id="departure-date"
                 name="departure-date"
                 placeholder="1 сентября 2023"
@@ -366,6 +372,8 @@
               <span class="calendar-label">
                 <svg
                   class="calendar-icon"
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -383,11 +391,13 @@
               </span>
             </p>
             <p class="numbers-adults">
-              <label for="adults" class="booking-label">Взрослые:</label>
+              <label class="booking-label" for="adults">Взрослые:</label>
               <span class="field-wrapper">
                 <button class="count minus" type="button">
                   <svg
                     class="count-icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -405,6 +415,8 @@
                 <button class="count plus" type="button">
                   <svg
                     class="count-icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -416,7 +428,7 @@
             </p>
             <p class="numbers-children">
               <span class="booking-label booking-label-icon">
-                <label for="children" class="booking-label">Дети:</label>
+                <label class="booking-label" for="children">Дети:</label>
                 <span class="tooltip">
                   <button
                     class="tooltip-toggle"
@@ -425,6 +437,8 @@
                   >
                     <svg
                       class="tooltip-icon"
+                      aria-hidden="true"
+                      focusable="false"
                       xmlns="http://www.w3.org/2000/svg"
                       width="3"
                       height="12"
@@ -451,6 +465,8 @@
                 <button class="count minus" type="button">
                   <svg
                     class="count-icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -467,6 +483,8 @@
                 <button class="count plus" type="button">
                   <svg
                     class="count-icon"
+                    aria-hidden="true"
+                    focusable="false"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
