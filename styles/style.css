@@ -1027,6 +1027,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
   padding-left: 0;
@@ -1045,17 +1046,17 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link[href]:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus-visible {
+.breadcrumbs-link[href]:focus-visible {
   color: #ffffff;
   outline: 2px solid #68a2ca;
   border-radius: 4px;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link[href]:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1151,11 +1152,11 @@ body {
   cursor: pointer;
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:hover .control-label {
+.control-input:hover ~ .control-label {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1164,11 +1165,11 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.control:active .control-mark {
+.control-input:active + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control:active .control-label {
+.control-input:active ~ .control-label {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1186,26 +1187,26 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background-image: url("../images/icons/checkbox.svg");
   background-size: 13px 10px;
   background-repeat: no-repeat;
-  background-position: 55% 55%;
+  background-position: 55% 58%;
 }
 
 .control-housing .control-mark {
   border-radius: 100%;
 }
 
-.control-housing .control-input[type="radio"]:checked + .control-mark {
+.control-input[type="radio"]:checked + .control-mark {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background-image: url("../images/icons/radio.svg");
-  background-size: 10px 11px;
+  background-size: 11px 11px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 56% 50%;
 }
 
 .cost-item-price {
@@ -1433,8 +1434,9 @@ body {
 .catalog-hotels-button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   column-gap: 8px;
+  row-gap: 5px;
   width: 160px;
 }
 
@@ -1471,15 +1473,15 @@ body {
   border: 2px solid #000;
 }
 
-.catalog-hotels-button-wrapper .catalog-hotels-button:nth-child(1) {
+.catalog-hotels-button-tile {
   background-image: url("../images/icons/catalog-icon-1.svg");
 }
 
-.catalog-hotels-button-wrapper .catalog-hotels-button:nth-child(2) {
+.catalog-hotels-button-card {
   background-image: url("../images/icons/catalog-icon-2.svg");
 }
 
-.catalog-hotels-button-wrapper .catalog-hotels-button:nth-child(3) {
+.catalog-hotels-button-list {
   background-image: url("../images/icons/catalog-icon-3.svg");
 }
 
@@ -1674,6 +1676,7 @@ body {
 /* Пагинация */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding-left: 0;
