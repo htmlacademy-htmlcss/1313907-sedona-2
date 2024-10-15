@@ -370,6 +370,7 @@ body {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -425,7 +426,6 @@ body {
 /* Секция поиск отеля */
 
 .search-hotel {
-  margin-top: -18px;
   padding: 96px 70px;
   text-align: center;
   background-color: #ffffff;
@@ -1665,6 +1665,8 @@ body {
   justify-self: end;
   margin: 0;
   padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  text-transform: uppercase;
   background-color: #f2f2f2;
   border-radius: 4px;
 }
