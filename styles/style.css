@@ -343,11 +343,7 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.advantages-list .advantages-item:nth-child(1) .advantages-description::before {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.advantages-list .advantages-item:nth-child(5) .advantages-description::before {
+.advantages-item-blue .advantages-description::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -418,15 +414,15 @@ img {
 
 }
 
-.services-list .services-item:nth-child(1) h3::before {
+.services-item:nth-child(1) h3::before {
   background-image: url("../images/icons/house-icon.svg");
 }
 
-.services-list .services-item:nth-child(2) h3::before {
+.services-item:nth-child(2) h3::before {
   background-image: url("../images/icons/food-icon.svg");
 }
 
-.services-list .services-item:nth-child(3) h3::before {
+.services-item:nth-child(3) h3::before {
   background-image: url("../images/icons/gift-icon.svg");
 }
 
@@ -659,7 +655,7 @@ img {
   fill: #756157;
 }
 
-.footer-logo-link:active .footer-logo-icon path {
+.footer-logo-link:active .footer-logo-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1087,15 +1083,15 @@ img {
   content: none;
 }
 
-.breadcrumbs-link:hover .breadcrumbs-icon path {
+.breadcrumbs-link:hover path {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus-visible .breadcrumbs-icon path {
+.breadcrumbs-link:focus-visible path {
   fill: #ffffff;
 }
 
-.breadcrumbs-link:active .breadcrumbs-icon path {
+.breadcrumbs-link:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -1239,11 +1235,11 @@ img {
   margin: 0;
 }
 
-.catalog-filter-cost .catalog-cost-item:first-child input {
+.catalog-cost-item:first-child input {
   border-radius: 4px 0 0 4px;
 }
 
-.catalog-filter-cost .catalog-cost-item:last-child input {
+.catalog-cost-item:last-child input {
   border-radius: 0 4px 4px 0;
 }
 
