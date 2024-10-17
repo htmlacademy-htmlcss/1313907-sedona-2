@@ -23,6 +23,11 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -140,11 +145,13 @@ body {
 }
 
 .navigation-link-search::before {
-  mask-image: url("../images/icons/search.svg");
+  -webkit-mask-image: url("../images/icons/search.svg");
+          mask-image: url("../images/icons/search.svg");
 }
 
 .navigation-link-favorites::before {
-  mask-image: url("../images/icons/heart.svg");
+  -webkit-mask-image: url("../images/icons/heart.svg");
+          mask-image: url("../images/icons/heart.svg");
 }
 
 /* Sticker */
@@ -499,9 +506,9 @@ body {
 .inner-newsletter .field {
   padding: 14px 20px;
   width: 452px;
+  font: inherit;
   line-height: 24px;
   color: #000000;
-  font: inherit;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -677,7 +684,7 @@ body {
   padding: 64px 70px;
   margin: auto;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 30px;
   align-items: end;
 }
@@ -710,9 +717,12 @@ body {
   transform: translate(50%, 50%);
   width: 14px;
   height: 14px;
-  mask-image: url(../images/icons/close.svg);
-  mask-repeat: no-repeat;
-  mask-position: center;
+  -webkit-mask-image: url("../images/icons/close.svg");
+          mask-image: url("../images/icons/close.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
   background-color: #000000;
 }
 
@@ -832,14 +842,16 @@ body {
   padding: 12px 0;
   width: 31px;
   text-align: center;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   box-sizing: border-box;
   border-radius: 0;
 }
 
 .numbers-field::-webkit-outer-spin-button,
 .numbers-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1216,12 +1228,14 @@ body {
   font: inherit;
   box-sizing: border-box;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .cost-item-price::-webkit-outer-spin-button,
 .cost-item-price::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1247,11 +1261,8 @@ body {
 }
 
 .catalog-filter-cost input:disabled {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.catalog-filter-cost input:disabled {
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .price-label {
@@ -1388,7 +1399,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .select {
@@ -1413,7 +1424,8 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   transition: border 250ms ease-in-out;
 }
 
@@ -1454,23 +1466,20 @@ body {
 }
 
 .catalog-hotels-button-active {
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .catalog-hotels-button:hover {
-  border: 2px solid #000;
-}
-
-.catalog-hotels-button:focus-visible {
-  border: 2px solid #68a2ca;
+  border: 2px solid #000000;
 }
 
 .catalog-hotels-button:focus-visible {
   outline: none;
+  border: 2px solid #68a2ca;
 }
 
 .catalog-hotels-button:active {
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .catalog-hotels-button-tile {
@@ -1740,15 +1749,11 @@ body {
 }
 
 .pagination-item-dots:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 
 .pagination-item-dots:focus-visible {
-  background-color: #ffffff;
-}
-
-.pagination-item-dots:hover {
-  color: #000000;
   background-color: #ffffff;
 }
 
