@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="catalog-header">
+      <header class="catalog-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img
@@ -53,8 +53,8 @@
           </ul>
         </nav>
       </header>
-      <main class="main-inner">
-        <header class="inner-header">
+      <main class="main-inner" data-test="main">
+        <header class="inner-header" data-test="header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -85,6 +85,7 @@
             action="https://echo.htmlacademy.ru/"
             class="catalog-filter"
             method="get"
+            data-test="filter"
           >
             <fieldset
               class="catalog-filter-group catalog-filter-infrastructure"
@@ -228,7 +229,7 @@
             </div>
           </form>
         </header>
-        <section class="catalog-hotels">
+        <section class="catalog-hotels" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="catalog-hotels-wrapper">
             <p class="catalog-hotel-numbers">
@@ -405,7 +406,7 @@
             </li>
           </ul>
         </section>
-        <section class="inner-newsletter">
+        <section class="inner-newsletter" data-test="subscribe">
           <h2 class="inner-newsletter-title">Подпишитесь на рассылку</h2>
           <p class="inner-newsletter-description">
             Только полезная информация и никакого спама,<br>
@@ -433,7 +434,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">

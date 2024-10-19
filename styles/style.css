@@ -51,7 +51,7 @@ img {
 }
 
 .navigation-logo {
-  margin-right: 28px;
+  margin-right: 30px;
   margin-bottom: -7px;
   width: 140px;
   height: 70px;
@@ -242,15 +242,17 @@ img {
   margin: 0 auto;
 }
 
-.introduce {
-  padding: 69px 70px;
-  padding-bottom: 90px;
-  text-align: center;
+/* Секция Преимущества */
+
+.advantages {
+  padding-top: 70px;
 }
 
-.introduce-title {
+.advantages-title {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0 70px;
+  text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -258,15 +260,17 @@ img {
   color: #000000;
 }
 
-.introduce-subtitle {
+.advantages-subtitle {
   margin: 0;
+  margin-bottom: 90px;
+  padding: 0 70px;
+  text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
-/* Секция Преимущества */
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -301,7 +305,7 @@ img {
   order: -1;
 }
 
-.advantages-title {
+.advantages-item-title {
   margin: 0;
   margin-bottom: 60px;
   font-weight: 700;
@@ -1017,7 +1021,7 @@ img {
 
 /* Страница каталога */
 .inner-header {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 75px;
   background-image: url("../images/filter-background.jpg");
   background-color: #333333;
   background-repeat: no-repeat;
@@ -1070,8 +1074,8 @@ img {
 
 .breadcrumbs-item::after {
   position: absolute;
-  top: 4px;
-  right: 9px;
+  top: 5px;
+  right: 10px;
   display: block;
   content: "";
   width: 8px;
@@ -1107,7 +1111,7 @@ img {
 }
 
 .catalog-filter-infrastructure {
-  margin-right: 70px;
+  margin-right: 67px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -1129,7 +1133,7 @@ img {
   display: flex;
   column-gap: 2px;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   padding-left: 0;
   list-style: none;
 }
@@ -1152,6 +1156,7 @@ img {
 
 .control-mark {
   position: absolute;
+  top: 1px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -1209,8 +1214,8 @@ img {
 
 .control-input[type="radio"]:checked + .control-mark {
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   background-image: url("../images/icons/radio.svg");
   background-size: 11px 11px;
   background-repeat: no-repeat;
@@ -1277,7 +1282,7 @@ img {
   position: relative;
   width: 287px;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -1373,7 +1378,7 @@ img {
 /* Список гостиниц в каталоге */
 
 .catalog-hotels {
-  padding-top: 50px;
+  padding-top: 49px;
   padding-left: 70px;
   padding-right: 70px;
   background-color: #ffffff;
@@ -1382,15 +1387,15 @@ img {
 .catalog-hotels-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .catalog-hotel-numbers {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: 200px;
-  width: 338px;
+  margin-right: auto;
+  width: 360px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1398,16 +1403,20 @@ img {
   color: #000000;
 }
 
+.catalog-hotel-numbers-current {
+  display: block;
+}
+
 .select {
   position: relative;
   display: flex;
   align-items: center;
   width: 292px;
-  margin-right: auto;
+  margin-right: 70px;
 }
 
 .select-control {
-  padding: 14px 20px;
+  padding: 12px 20px;
   padding-right: 48px;
   width: 100%;
   font: inherit;
@@ -1442,7 +1451,6 @@ img {
 .catalog-hotels-button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: flex-end; */
   column-gap: 8px;
   row-gap: 5px;
   width: 160px;
@@ -1496,7 +1504,7 @@ img {
   column-gap: 20px;
   row-gap: 17px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   padding-left: 0;
   padding-bottom: 40px;
   list-style-type: none;
@@ -1670,12 +1678,18 @@ img {
 .product-card-rating {
   grid-column: 2/3;
   justify-self: end;
+  display: flex;
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 21px 8px 21px;
+  text-align: center;
   font-size: 16px;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border-radius: 4px;
+}
+
+.card-rating-number {
+  margin-left: 5px;
 }
 
 /* Пагинация */
