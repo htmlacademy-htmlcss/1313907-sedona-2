@@ -316,15 +316,15 @@ img {
   color: #000000;
 }
 
-.advantages-item-blue {
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list .advantages-item-blue {
   display: flex;
   width: 1200px;
   background-color: #82b3d3;
   color: #ffffff;
-}
-
-.advantages-item-dark {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title-white {
@@ -401,7 +401,7 @@ img {
   margin: 0;
 }
 
-.services-item-dark {
+.services-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -418,15 +418,15 @@ img {
 
 }
 
-.services-item:nth-child(1) h3::before {
+.services-house-icon h3::before {
   background-image: url("../images/icons/house-icon.svg");
 }
 
-.services-item:nth-child(2) h3::before {
+.services-food-icon h3::before {
   background-image: url("../images/icons/food-icon.svg");
 }
 
-.services-item:nth-child(3) h3::before {
+.services-gift-icon h3::before {
   background-image: url("../images/icons/gift-icon.svg");
 }
 
@@ -614,7 +614,10 @@ img {
 }
 
 .footer-contacts {
-  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 360px;
   text-align: center;
 }
 
